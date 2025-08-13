@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Sneakers - OnSale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="OnSale Logo" class="logo">
+    <nav>
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exclusive-clothing.html">Exclusive Clothing</a></li>
+            <li><a href="exclusive-sneakers.html">Exclusive Sneakers</a></li>
+            <li><a href="new-sneakers.html" class="active">New Sneakers</a></li>
+            <li><a href="used-sneakers.html">Used Sneakers</a></li>
+            <li><a href="list-sneakers.html">List Your Sneakers</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Brand New Sneakers</h1>
+    <p>Fresh out of the box, 100% authentic sneakers.</p>
+</section>
+
+<section class="product-grid">
+    <div class="product-card">
+        <img src="img/sneaker6.jpg" alt="Nike Air Max">
+        <p>Nike Air Max</p>
+        <p>R2,400</p>
+    </div>
+    <div class="product-card">
+        <img src="img/sneaker7.jpg" alt="Adidas Ultraboost">
+        <p>Adidas Ultraboost</p>
+        <p>R2,800</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 OnSale. All rights reserved.</p>
+</footer>
+
+<script>
+document.querySelector(".menu-toggle").addEventListener("click", function(){
+    document.querySelector(".menu-links").classList.toggle("show");
+});
+</script>
+
+</body>
+</html>

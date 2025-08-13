@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnSale - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" alt="OnSale Logo" class="logo">
+    <nav>
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exclusive-clothing.html">Exclusive Clothing</a></li>
+            <li><a href="exclusive-sneakers.html">Exclusive Sneakers</a></li>
+            <li><a href="new-sneakers.html">New Sneakers</a></li>
+            <li><a href="used-sneakers.html">Used Sneakers</a></li>
+            <li><a href="list-sneakers.html">List Your Sneakers</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to OnSale</h1>
+    <p>Your trusted middleman for buying and selling sneakers.</p>
+    <img src="img/animated-sneaker.png" alt="Sneaker Animation" class="sneaker-animation">
+</section>
+
+<section class="about">
+    <div style="padding: 20px; max-width: 800px; margin: auto; text-align: center;">
+        <h2>How It Works</h2>
+        <p>At OnSale, we connect sneaker buyers and sellers safely and efficiently. Whether you have exclusive drops, brand new kicks, or pre-loved sneakers, we handle the middleman process — ensuring payments, delivery, and authenticity checks.</p>
+        <p>💰 Commission: R150 - R100 or 15% depending on the sneaker’s selling price.</p>
+        <p>✔ No scams, no fake sneakers — just real deals.</p>
+    </div>
+</section>
+
+<section class="featured">
+    <h2 style="text-align:center; margin-bottom: 20px;">Featured Sneakers</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="img/sneaker1.jpg" alt="Nike Air max 95">
+            <p> Nike Air max 95</p>
+            <p>Price: R2,800</p>
+        </div>
+        <div class="product-card">
+            <img src="img/sneaker2.jpg" alt="VANS old skool x one piece">
+            <p>  VANS old skool x one piece</p>
+            <p>Price: R3,200</p>
+        </div>
+        <div class="product-card">
+            <img src="img/sneaker3.jpg" alt="Puma Suede XL">
+            <p>Puma Suede XL</p>
+            <p>Price: R1,100</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 OnSale. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function(){
+        document.querySelector(".menu-links").classList.toggle("show");
+    });
+</script>
+
+</body>
+</html>

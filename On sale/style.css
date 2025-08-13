@@ -1,0 +1,180 @@
+/* ==== GENERAL RESET ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ==== HEADER & NAV ==== */
+header {
+    background: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu-toggle {
+    background: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.menu-links li a:hover {
+    background: red;
+    border-radius: 5px;
+}
+
+.menu-links.show {
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+    }
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+    background: linear-gradient(to bottom, red, black);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+/* ==== PRODUCT GRID ==== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* ==== FORM SECTION ==== */
+.form-section {
+    padding: 20px;
+}
+
+form {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input, select {
+    background: #333;
+    color: white;
+}
+
+button {
+    background: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: darkred;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* ==== SNEAKER ANIMATION ==== */
+.sneaker-animation {
+    width: 150px;
+    margin: 30px auto;
+    display: block;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
